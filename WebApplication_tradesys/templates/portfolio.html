@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask Bucket List App</title>
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+ 
+    <!-- <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet"> -->
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+    <!-- <script src = "jquery-4.1.3.js"></script> -->
+    <!-- <script src="../static/js/plotly.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>  
+
+   
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" >CryptoTrading</a>
+            <!--Add here -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Add here -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/portfolio">My Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/trade">Trade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    <div class="jumbotron">
+      
+      <h3>Hello, {{ userName }} </h3>
+
+     <br>
+      <h4>Cash Balance: {{"%0.2f"|format(cashBalance)}}</h4>
+    <br>
+      <table class="table table-hover">
+      <h4>Your Account Summary</h4>
+      <!-- example: [('ETH-USD', 2, 107.5, 108.738), ('BTC-USD', 1, 3846.47, 3869.97), ('LTC-USD', 6, 30.6437, 30.452)] -->
+      
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Total_Quantity</th>
+          <th>Ajusted Cost</th>
+          <th>Market Values</th>
+          <th>UP/L</th>
+          <th>RP/L</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in portfolio_balance %}
+        <tr>
+          <td>{{c[1]}}</td>
+          <td>{{c[2]}}</td>
+          <td>{{c[3]}}</td>
+          <td>{{"%0.2f"|format(updated_price[c[0]]*c[2])}}</td>
+          <td>{{"%0.2f"|format(updated_price[c[0]]*c[2]-c[2]*c[3])}}</td>
+          <td>{{c[4]}}</td>
+
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+ 
+    <span><h3>Equity Distribution</h3></span>
+      <!-- <div class="wrapper">
+        <div id="piechart"> -->
+        <canvas id="chart" width="600" height="400"></canvas>
+
+        <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+        <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart); -->
+        
+        <!-- // Draw the chart and set the chart values
+        // function drawChart() {
+        //   var data = google.visualization.arrayToDataTable([
+        //   ['Cryto', 'Holdings'],
+        //   ['BTC', 8],
+        //   ['LTC', 2],
+        //   ['ETH', 4],
+
+        // ]); -->
+        <span><script>
+          var pieData =[
+            {% for symbol,equity,colors in set %}
+            {
+              value:{{equity}},
+              label:"{{symbol}}",
+              color: "{{colors}}"
+            },
+            {% endfor %}
+          ];
+
+          var mychart = document.getElementById("chart").getContext("2d");
+            
+          steps = 10
+          max = 10
+            // draw pie chart
+          new Chart(document.getElementById("chart").getContext("2d")).Pie(pieData)          
+
+        
+
+        </script>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <span><h3>Realized Profit/Loss</h3></span>
+      <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+
+      
+      <script>
+
+
+        window.onload = function () {
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+	              animationEnabled: true,
+	                theme: "light2", // "light1", "light2", "dark1", "dark2"
+	                  // title:{
+	                	// text: "Realized Profit/Loss"
+	                  //     },
+	              axisY: {
+		              title: "RP/L"
+	                    },
+  	            data: [{        
+		              type: "column",  
+		              showInLegend: false, 
+		              // legendMarkerColor: "grey",
+                  // legendText: "currency",
+
+		              dataPoints: [
+                      {% for symbol, rpl in set2 %}      
+                        { y: {{rpl}}, label: "{{symbol}}" },
+                      {% endfor %}
+	
+		                    ]
+	            }]
+            });
+          chart.render();
+
+}
+         
+ 
+   
+            
+
+        </script>
+    <br>
+    <br>
+
+<table class = 'table table-hover'>
+    <h4>Trading History:</h4>
+    <!-- example: [('LTC-USD', 'Buy', 1, 30.73, datetime.datetime(2018, 12, 3, 18, 25, 42), None), ('BTC-USD', 'Sell', 1, 3857.98, datetime.datetime(2018, 12, 3, 18, 27, 56), 4.0), ('ETH-USD', 'Sell', 3, 107.85, datetime.datetime(2018, 12, 3, 18, 29, 16), 0.57), ('LTC-USD', 'Buy', 1, 30.37, datetime.datetime(2018, 12, 3, 19, 16, 30), None), ('LTC-USD', 'Buy', 1, 30.46, datetime.datetime(2018, 12, 3, 19, 21, 54), None)] -->
+    <thead>
+      <tr>
+          <th>Symbol</th>
+          <th>Side</th>
+          <th>Qty</th>
+          <th>Timestamp</th>
+          <th>Cost</th>
+          <th>RP/L</th>
+      </tr>
+    </thead>
+    {% for transaction in trans_history %}
+    <tr>
+        <td>{{transaction[0]}}</td>
+        <td>{{transaction[1]}}</td>
+        <td>{{transaction[2]}}</td>
+        <td>{{transaction[4]}}</td>
+        <td>{{transaction[3]}}</td>
+        <td>{{transaction[5]}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+      </div>
+      
+        
+      
+      
+        
+
+
+      <footer class="footer">
+        <p>&copy;666 CryptoTrading  2018</p>
+      </footer>
+  </div>
+  </div>
+
+ 
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
+  </body>
+</html>
+
+
