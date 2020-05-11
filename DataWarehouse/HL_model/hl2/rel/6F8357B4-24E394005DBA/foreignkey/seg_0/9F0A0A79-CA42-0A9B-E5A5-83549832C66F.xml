@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9F0A0A79-CA42-0A9B-E5A5-83549832C66F" containerWithKeyObject="2E405B2F-3436-EB3B-6E5D-989E6FA3CB46" localFKIndex="7FCF716D-73EF-26A6-39D0-D6977A2BC16B" name="HL2_SHIP_MODE_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:51:03 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<referredTableLongName>HL2_SHIP_MODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>125227B1-1545-DCB0-5C5D-3AE15DA7FB1E</referredTableID>
+<keyObject>306764FD-65A8-7612-0FC7-A06891864AE0</keyObject>
+<referredKeyID>306764FD-65A8-7612-0FC7-A06891864AE0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SHIP_MODE_PK</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

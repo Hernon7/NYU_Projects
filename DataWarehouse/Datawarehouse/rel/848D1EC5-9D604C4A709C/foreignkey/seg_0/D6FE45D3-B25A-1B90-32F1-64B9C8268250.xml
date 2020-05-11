@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D6FE45D3-B25A-1B90-32F1-64B9C8268250" containerWithKeyObject="E95C0E5D-EBB4-34D2-266E-686360214D5C" localFKIndex="4AB825EA-1BB3-CDEE-E541-1FC8FF03B803" name="period_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:57 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<referredTableLongName>hl3_period</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1F68244F-ED8C-5C87-4260-2C25C690BCB2</referredTableID>
+<keyObject>55B6EF56-F6CA-4B34-70AC-512C72D86AB3</keyObject>
+<referredKeyID>55B6EF56-F6CA-4B34-70AC-512C72D86AB3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>period_pk</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B179E2FE-D512-DC84-D44D-00DC2CC2D829" name="1HL_shipmode">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:11:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shipmode_id" id="14ECA6B1-D87F-EE88-4B50-785B26A7E1A4">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:12:10 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipmode" id="EE685A25-3346-2F61-CD75-35964361E44C">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:28:51 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="768A156A-8325-1963-E39A-03F2D8E1F82A" name="ss_shipmode_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:12:10 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14ECA6B1-D87F-EE88-4B50-785B26A7E1A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

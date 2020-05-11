@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C580E146-3A1F-DF7D-1883-ACF052A2C49E" name="nf_stock">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:27:51 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="stock_pk" id="782DB657-DC44-1DD1-61AC-5FC507B24FFE">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:30:58 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_number" id="430B144C-713E-B048-3408-E4BA4F5199E5">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:30:58 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_fk" id="31EE26FA-74C5-56B0-05AE-B1B5E3C1135B">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 23:03:37 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C74558B-25DA-EA79-D618-C198F13D2758" referredColumn="860F3E3C-5C4B-FE43-17D7-8E1DE72FCC79"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E99C7182-DC5A-8049-9841-5C0B6A717067" name="stock_PK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:30:58 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="782DB657-DC44-1DD1-61AC-5FC507B24FFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCE32B83-63A3-22F2-5A40-C1C9500DE763" name="stock_and_product">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 23:03:37 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31EE26FA-74C5-56B0-05AE-B1B5E3C1135B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

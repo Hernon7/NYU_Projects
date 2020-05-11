@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D75844FB-D50D-47AC-3E68-CEAFE0A4755D" name="HL1_product">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:26:19 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="B1F55F82-42B7-7E54-4FD4-0D0ADAED15D4">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:28:26 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_name" id="E3483553-E02C-34FD-CEA5-E36B0522D22A">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:28:26 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_base_margin" id="18FD1193-1950-1907-7EB4-3C3AD7047B4C">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:28:26 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productcon__id" id="8429FB5B-D6F6-0E91-8C81-B46B91C26044">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:47:23 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2E1CF47-E36F-F09A-9EE9-01C499A82E18" referredColumn="C48034FF-11C1-F2E2-DE86-E08DF08103D6"/>
+</associations>
+</Column>
+<Column name="productsubcate_id" id="CCCC9935-687F-CA48-679E-B96C10B8AEC9">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:49:19 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B10FF96-106F-A3EE-14D2-CD847BB2353E" referredColumn="F7F10352-68C9-AB71-FE88-4F9057B71087"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EBAA61E-227A-BBDA-9B9C-D4F05537AB6D" name="ss_product_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:28:26 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1F55F82-42B7-7E54-4FD4-0D0ADAED15D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D0578E0-3D10-AD7B-425F-FA6DB5A07EC9" name="ss_productcon_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:47:23 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8429FB5B-D6F6-0E91-8C81-B46B91C26044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19A719FB-3ECA-7EDA-D911-8D0BDCD61B45" name="ss_product_sub_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:49:19 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCCC9935-687F-CA48-679E-B96C10B8AEC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="38643958-82B9-F625-814C-2DEBE256F249" name="nf_score_list">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 21:57:41 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="score_list_pk" id="87D4DAE2-4611-FBA1-24AC-A063E509EBDC">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 21:58:40 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="work_balance_stars" id="EF93B811-68A2-0755-963A-F4DE190E413F">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 21:58:40 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="culture_values_stars" id="5DC173D9-8FD2-8C6D-D290-575BA861E8F8">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:01:37 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="carrer_opportunities_stars" id="F775D9EF-B493-B23E-F827-FEA3DE0979C8">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:01:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comp_benefit_stars" id="47E8FF19-89A9-AF65-D843-5B685C4089C7">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:01:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senior_mangement_stars" id="FBD56BDC-1916-512B-42BA-A145D30DBFFE">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:01:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="overall_ratings" id="EBE0B1D9-7A05-0D51-1011-A3725046AC92">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:02:12 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_review_fk" id="719CB532-1A1E-3F35-5F99-F66FA650494F">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:03:53 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A15C871-4F1E-256D-67DE-1522634EE948" referredColumn="9D58761A-4A50-CE73-3D83-59EF5F13DC25"/>
+</associations>
+</Column>
+<Column name="helpful_count" id="226077A8-67B8-3651-7970-8EA95610FC5C">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:13:31 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8395418B-630E-2BB2-F998-B5BDEE0C23A7" name="nf_score_list_PK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 21:58:40 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87D4DAE2-4611-FBA1-24AC-A063E509EBDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88D42592-105E-7228-4300-445946E476C1" name="score_list_and_employee_review">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:03:53 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="719CB532-1A1E-3F35-5F99-F66FA650494F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

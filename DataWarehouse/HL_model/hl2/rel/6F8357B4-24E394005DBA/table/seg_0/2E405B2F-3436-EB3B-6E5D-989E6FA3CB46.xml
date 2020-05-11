@@ -1,0 +1,226 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E405B2F-3436-EB3B-6E5D-989E6FA3CB46" name="HL2_ORDER_INFORMATION">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:36:34 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SHIOMENT_PF" id="D25D3655-1C58-63E3-4A98-5BC43AC79E27">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_FK" id="B11856AC-09E4-03F0-BC72-43051F8C831E">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:10:06 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD485CFB-C7DF-D54D-A776-34EFB8B9A543" referredColumn="DC2F9FA6-C03B-E4B1-D14C-1A23AA9D878C"/>
+</associations>
+</Column>
+<Column name="ADDRESS_FK" id="1614125A-9B81-BEDC-9F53-F248538226C4">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35ADD87B-0821-5E02-2649-D5E37D7DAA73" referredColumn="10662604-190A-4E1F-F34E-4853D1E0CDB6"/>
+</associations>
+</Column>
+<Column name="PRODUCT_FK" id="AACB6C70-4FD2-7653-9326-7D591C562409">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:15:44 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3410788-4B3B-D429-1FEB-7B9271DBA328" referredColumn="E360CE16-6B7F-27BB-A2EB-390AEF03983C"/>
+</associations>
+</Column>
+<Column name="SHIP_DATE" id="AB2F5705-62FA-3B99-2B8B-056DE015EB1C">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIPPING_COST" id="992F71BB-FE95-93DA-4CD2-86AD5D51CA7A">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_MODE_FK" id="75E70FA4-7282-B42F-C7D3-06D358F5A91D">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F0A0A79-CA42-0A9B-E5A5-83549832C66F" referredColumn="E859C467-A689-5A36-4964-EC5E0B1AE5A5"/>
+</associations>
+</Column>
+<Column name="ORDER_ID" id="EBBDF399-9F4A-9785-5ED7-A54DB80264C0">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_DATE" id="CA065121-4A8C-F225-783C-3905D43D6446">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:09:35 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_PRIORITY_FK" id="1D23CF1E-7B62-A604-4404-E6809D283C03">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F103B9C3-1B43-A40A-AFC3-33ECD8BC8296" referredColumn="8EF0E4A3-AB92-75EB-591E-E8AF500CEABC"/>
+</associations>
+</Column>
+<Column name="QUANTITY" id="ECBCD9F6-976D-F34A-586E-36CC246A4771">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:19:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISCOUNT" id="D56CBA7C-66DB-FC9D-6D37-AD684E47254C">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:19:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_PRICE" id="31D7CD78-6D69-BF45-6549-800D86937BC9">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:19:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE09EEB3-2F2B-9010-FAF1-E873718B1136" name="HL2_SHIPMENT_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D25D3655-1C58-63E3-4A98-5BC43AC79E27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="457FEAFC-ADBE-C0EB-52FB-BE9E79ED2014" name="HL2_ADDRESS_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:39:58 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1614125A-9B81-BEDC-9F53-F248538226C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA245D38-73CF-70C7-5211-2D4788B59364" name="HL2_ORDER_PRIORITY_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:50:43 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D23CF1E-7B62-A604-4404-E6809D283C03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FCF716D-73EF-26A6-39D0-D6977A2BC16B" name="HL2_SHIP_MODE_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:51:03 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75E70FA4-7282-B42F-C7D3-06D358F5A91D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE8C0206-0068-F729-F180-A165D0926D69" name="HL2_ORDER_CUSTOMER_FK_">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:11:07 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B11856AC-09E4-03F0-BC72-43051F8C831E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7471963-5715-61F3-CE7D-1B1886E7CE57" name="HL2_PRODUCT_FK">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:25:56 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AACB6C70-4FD2-7653-9326-7D591C562409"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

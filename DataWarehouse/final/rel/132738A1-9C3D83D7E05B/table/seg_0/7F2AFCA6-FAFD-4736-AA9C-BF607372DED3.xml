@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F2AFCA6-FAFD-4736-AA9C-BF607372DED3" name="HLfin_address">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:29:16 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="address_pk" id="A0C91644-8643-6572-3230-1668BB47F91F">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:30:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zip" id="4B706FC3-8FE3-65E0-499F-A70AEC565CED">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:30:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street" id="807FB086-DAE4-EB76-876E-9C5266541BBA">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:30:18 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="4750C1EB-C8A5-8162-02C6-B2BD643AF275">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:30:47 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="861FF88D-134C-A134-66E9-76C61F712BEE">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:30:47 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="BB2A4341-5C55-60A7-7D1B-49EE3E7FF6E7">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 04:08:12 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A6D8F93-9BBE-4B86-2B71-6D8A114A07F7" name="HLfin_address_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:34:41 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0C91644-8643-6572-3230-1668BB47F91F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

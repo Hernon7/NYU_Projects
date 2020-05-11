@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B38676F-9A99-81EF-13B8-AB7217E23C30" name="hl3_category">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:19:26 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="category_pk" id="67F4B348-299C-0DD4-5586-C1CAA592B86F">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:20:18 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_name" id="C78C6FBB-EBCD-B693-2EE0-C8F173EA0B7B">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:20:18 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sub_category_name" id="E1328496-7CD5-A1E9-C350-117517A1C5FB">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:20:18 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_fk" id="89A2BC7F-3954-C10B-94A9-780D9C9B1386">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:43:55 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F2D271E-597F-AA06-624B-5F92C31D53C2" referredColumn="67F4B348-299C-0DD4-5586-C1CAA592B86F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="165E373D-6067-5764-43E1-128B0780896A" name="hl3-category_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:21:02 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67F4B348-299C-0DD4-5586-C1CAA592B86F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BCCC975-5D0D-F5CD-CDC9-8C5302354110" name="sub_category_fk">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:43:55 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89A2BC7F-3954-C10B-94A9-780D9C9B1386"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

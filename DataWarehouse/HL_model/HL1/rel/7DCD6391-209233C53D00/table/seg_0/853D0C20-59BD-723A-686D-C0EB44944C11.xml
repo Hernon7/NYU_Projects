@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="853D0C20-59BD-723A-686D-C0EB44944C11" name="HL1_states">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 03:01:42 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="states_id" id="0F02C179-B0B2-D686-4660-C86B5EF9142D">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 03:35:19 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="states" id="D4F8C76F-95B3-4184-AC83-D41FFEAB93DE">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 03:35:19 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region_id" id="F12B7AFE-B503-498B-D33B-AFFABBBE8E28">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:00:35 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0821BEE0-44C8-77E4-EC87-950EBF8B50B0" referredColumn="90F8E5E5-5920-020D-069F-97A87BF8F7B6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC35FC35-4BCF-FC4D-488C-53D34FD8A38A" name="ss_states_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 03:35:19 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F02C179-B0B2-D686-4660-C86B5EF9142D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30C864D8-8D83-05B2-E73C-A2E3C297B8C8" name="ss_statesegion_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:00:35 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F12B7AFE-B503-498B-D33B-AFFABBBE8E28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

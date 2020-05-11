@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90200248-C546-F44E-081F-0638594158E1" name="nf_product">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:14:39 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_pk" id="860F3E3C-5C4B-FE43-17D7-8E1DE72FCC79">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:18:25 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_fk" id="4595F798-BDFE-A93E-122C-F2C61D3F1894">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 23:00:04 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E248D083-BB58-9D76-91B9-E28FF1F8C2E2" referredColumn="BCBB935C-5C58-FBF5-15AE-736734518CDC"/>
+</associations>
+</Column>
+<Column name="category_fk" id="FBEE0428-D9E0-32A8-B523-9D4B1B5F49FA">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 23:01:00 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E021B2E7-5BC0-F3D6-00BD-5E8F2E557851" referredColumn="D3BB4D36-DA62-80F4-53C5-4F3F84DB734D"/>
+</associations>
+</Column>
+<Column name="asin" id="497E7A7E-05B8-8465-197E-760852A8FCFB">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-16 18:40:21 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="CD62014C-6E18-8567-829E-1FFA4B0320A0">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:33:43 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C538207-63CF-B1C9-D8F1-01A3FD1D7A59" name="product_PK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:18:25 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="860F3E3C-5C4B-FE43-17D7-8E1DE72FCC79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB7368CE-C31B-9772-0EE5-86E50009CB72" name="product_and_company">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 23:00:04 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4595F798-BDFE-A93E-122C-F2C61D3F1894"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABB73A5B-EA51-DB74-2EA5-07C6897FE290" name="product_and_category">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 23:01:00 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBEE0428-D9E0-32A8-B523-9D4B1B5F49FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

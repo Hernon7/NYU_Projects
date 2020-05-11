@@ -1,0 +1,232 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E95C0E5D-EBB4-34D2-266E-686360214D5C" name="hl3_data">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:21:14 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="data_pk" id="4AB0EDC3-E353-A17F-7274-06DF4CBD1147">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:24:35 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="added_dt" id="F7CD4B94-5C67-90BE-5141-3FD02DA8592B">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:38:32 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="B73879E0-1A4B-0515-73B1-89C726336F38">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:24:35 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_price" id="120FD3C0-59CF-625E-82B7-217CE71FA63C">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:24:35 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="discount" id="6CCE2FBA-7B2E-5C25-E83E-191A7D2DA86D">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:24:35 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_cost" id="BBC4CBA7-D3EB-CF3C-6B45-33B9C0A50367">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:34:35 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sales" id="C64D1F42-08EB-4A3F-7FC6-7FADFF45247A">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:24:35 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profit" id="E3412568-F263-7B5A-9CDD-22B6753FE30C">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:34:35 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_pk" id="05E5AEC7-CB6E-F676-54E9-A4238B7C1687">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:24:51 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E426B93A-7F70-FD3A-60BC-D01C0EB6F905" referredColumn="1230BA41-F09D-2F7A-B2A0-BFEFCA901EFF"/>
+</associations>
+</Column>
+<Column name="segment_pk" id="D622C5B0-3E5D-629C-392D-6FD41E6FE848">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:16 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC01F1B3-6EDF-6181-FC93-695C13FD66B1" referredColumn="166EDD1B-0248-711B-B961-909A4A81BB61"/>
+</associations>
+</Column>
+<Column name="product_pk" id="23377D17-6674-59D3-0B11-7CD442C5752B">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:32 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF11D1A9-007E-1E73-D913-ED3B523F07A9" referredColumn="BC4554E3-2D83-7490-7171-42EC47F5F231"/>
+</associations>
+</Column>
+<Column name="category_pk" id="51665437-9F94-FBEC-76F9-FA4508D84DC7">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:39 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="573EBC6A-1B26-292B-A718-86DE73F7D0D4" referredColumn="67F4B348-299C-0DD4-5586-C1CAA592B86F"/>
+</associations>
+</Column>
+<Column name="period_pk" id="788FE846-733F-3C32-6DB9-D864C4A03B9E">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:57 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6FE45D3-B25A-1B90-32F1-64B9C8268250" referredColumn="DFE84744-F2CD-F54A-B99F-B94530A0C571"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7643575E-FBA7-6EB2-DF24-23490438A60B" name="hl3_data_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:24:35 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AB0EDC3-E353-A17F-7274-06DF4CBD1147"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C0E33A9-1DB4-79B1-5D9A-0DD8D6E718F8" name="customer_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:24:51 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05E5AEC7-CB6E-F676-54E9-A4238B7C1687"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC3BB162-CDE3-1FA1-1C91-E798C75C1D99" name="segment_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:16 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D622C5B0-3E5D-629C-392D-6FD41E6FE848"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65B70B19-C83A-1C49-7728-0BFC4FF2AE80" name="product_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:32 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23377D17-6674-59D3-0B11-7CD442C5752B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA00EF15-1B2F-0399-17DE-E7D753D4E68C" name="category_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:39 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51665437-9F94-FBEC-76F9-FA4508D84DC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AB825EA-1BB3-CDEE-E541-1FC8FF03B803" name="period_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:25:57 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="788FE846-733F-3C32-6DB9-D864C4A03B9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

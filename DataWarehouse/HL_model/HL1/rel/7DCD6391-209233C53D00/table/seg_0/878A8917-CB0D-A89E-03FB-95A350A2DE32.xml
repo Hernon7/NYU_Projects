@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="878A8917-CB0D-A89E-03FB-95A350A2DE32" name="HL1_transaction">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:41:58 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="row_id" id="C7E29DCC-65A4-C5AF-9017-EFC2EF6E6C60">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:46:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="C270F7B4-FBE6-5E9F-D042-F4141759E343">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:46:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sales" id="43B0329D-9114-403D-8B3F-968263860D9E">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:46:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_price" id="940D3913-D576-566A-0638-CF1C67A377AD">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:46:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_cost" id="97C949A4-A73A-D73C-B5AF-1BE1B6A3B382">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:46:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="discount" id="CF0FA033-7797-C49E-36A3-0352D3B93734">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:46:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_orderednew" id="757A4067-4C88-9BDC-CF4E-A1B6B4D6CEE3">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:46:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_id" id="F223A236-5B3D-A5FE-CED7-609BDBC00279">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:55:15 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D076EDD-6518-F103-E909-A0CF685968D2" referredColumn="932B5F4B-9D4E-99CD-A32F-E9D75973B63E"/>
+</associations>
+</Column>
+<Column name="product_id" id="FDBA241B-7634-FB81-401C-17307EEC4126">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 20:04:42 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="300BCDBD-4781-730E-DCE2-F858C0BC8CAE" referredColumn="B1F55F82-42B7-7E54-4FD4-0D0ADAED15D4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E262CAE1-092B-B064-DB35-A1D22F514C0D" name="ss_transaction_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:46:31 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7E29DCC-65A4-C5AF-9017-EFC2EF6E6C60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="785ADF26-35F8-CDB1-7CF2-D61B3382C05A" name="ss_tran_order_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:55:15 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F223A236-5B3D-A5FE-CED7-609BDBC00279"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94CD4893-B5B5-4841-878D-1894C3024374" name="ss_transact_product_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 20:04:42 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDBA241B-7634-FB81-401C-17307EEC4126"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

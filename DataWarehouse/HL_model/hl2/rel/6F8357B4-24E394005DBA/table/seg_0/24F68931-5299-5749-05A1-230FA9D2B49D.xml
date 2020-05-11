@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24F68931-5299-5749-05A1-230FA9D2B49D" name="HL2_ADDRESS">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:13:44 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADDRESS_PK" id="10662604-190A-4E1F-F34E-4853D1E0CDB6">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:15:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="3EC01092-598A-984D-FFE1-3479F408481F">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:15:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTAL_CODE" id="F18D30AD-F6F9-61CE-1794-07E47A565421">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:15:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE_FK" id="56090A2A-8D1D-829E-9998-4860127A201B">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:15:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D1C0250-CD7F-1B40-352F-8FAF057F2115" referredColumn="119EFBC0-E8D6-226B-D775-94B4331AF470"/>
+</associations>
+</Column>
+<Column name="CUSTOMER_FK" id="5FC804CA-056C-DCB4-8A62-05700FAD7755">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:15:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80C5CF0E-B762-4632-AA12-BAE195CB6E90" referredColumn="DC2F9FA6-C03B-E4B1-D14C-1A23AA9D878C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BA7EE6D-0E44-B885-51E6-E85F45B706A0" name="HL2_ADDRESS_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:15:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10662604-190A-4E1F-F34E-4853D1E0CDB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="587A4431-542A-D2ED-33F8-2CA96A899AAA" name="HL2_STATE_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:16:33 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56090A2A-8D1D-829E-9998-4860127A201B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52A14511-2EC5-00F1-5777-8DE957C0799B" name="HL2_CUSTOMER_FKv1">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:17:01 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FC804CA-056C-DCB4-8A62-05700FAD7755"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

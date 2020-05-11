@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="41E68968-859E-6703-CC69-B970A2D5B8C9" name="HL2_PRODUCT_CATEGORY">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:33:39 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GATEGORY_PK" id="8E42D174-C909-0983-59D5-AD9360133ED2">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:41:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAE6CF75-E3F7-EF0E-03B8-87ECCA1B03BA" referredColumn="8E42D174-C909-0983-59D5-AD9360133ED2"/>
+</associations>
+</Column>
+<Column name="CATEGORY_NAME" id="3445B8A4-D314-4146-F1F7-88FC664EBA88">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:41:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_RFK" id="C34B6907-C020-F45A-3356-D9C482551248">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:41:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29D0FD95-CD41-3038-6806-844AE2DFDCC2" name="HL2_PRODUCT_CATEGORY_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:41:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E42D174-C909-0983-59D5-AD9360133ED2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B55FCD91-801A-8BBD-FF25-1C1A60AD92D4" name="HL2_PRODUCT_CATEGORY_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:41:54 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E42D174-C909-0983-59D5-AD9360133ED2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="618A1E31-0F5A-400E-2681-59BD64289DC5" name="HLfin_invoice">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:30:50 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="invoice_pk" id="AF464349-E24B-F826-BB6F-3002F1A18CC5">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:31:50 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="invoice_date" id="671CAFB5-BCC8-A0F3-9F8F-93E0ABA611C5">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:31:50 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="invoice_week" id="3AC3EB96-4A36-758C-3D90-82FF348936D7">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 01:42:45 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9649607E-A353-CD19-9245-AF90FF1A46C1" name="HLfin_invoice_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:34:39 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF464349-E24B-F826-BB6F-3002F1A18CC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

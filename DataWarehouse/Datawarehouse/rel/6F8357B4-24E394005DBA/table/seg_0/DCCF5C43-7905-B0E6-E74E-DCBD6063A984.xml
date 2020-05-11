@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCCF5C43-7905-B0E6-E74E-DCBD6063A984" name="HL2_PRODUCT_CONTAINER">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 19:21:42 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTAINER_PK" id="9789C22E-38BC-D44D-DF9D-9DCAEF6D9760">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 19:22:43 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTAINER_NAME" id="BE46E57F-3B3F-868C-93AE-510C45AC911E">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 19:22:43 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="36CC8AAE-AA57-5459-D2A3-BD4931D6EC7B" name="HL2_PRODUCT_CONTAINER_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 19:22:43 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9789C22E-38BC-D44D-DF9D-9DCAEF6D9760"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

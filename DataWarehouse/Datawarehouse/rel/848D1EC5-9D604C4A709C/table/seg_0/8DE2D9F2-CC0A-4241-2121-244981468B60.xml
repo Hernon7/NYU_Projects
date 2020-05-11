@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DE2D9F2-CC0A-4241-2121-244981468B60" name="hl3_product">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:17:17 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_pk" id="BC4554E3-2D83-7490-7171-42EC47F5F231">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:18:30 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_name" id="A7D00FA4-6FF0-46FC-CBA4-C7EEEA3E48CA">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:18:30 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_container" id="A30C85F9-EB24-6D1E-E567-AFD6AA058BE3">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:18:30 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="base_margin" id="3C60A9E8-E9B1-5EAF-7A40-1C7AFDE72925">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:41:00 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C18893C-5B28-E0B9-315A-D564C2998030" name="hl3_product_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-20 00:21:06 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC4554E3-2D83-7490-7171-42EC47F5F231"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

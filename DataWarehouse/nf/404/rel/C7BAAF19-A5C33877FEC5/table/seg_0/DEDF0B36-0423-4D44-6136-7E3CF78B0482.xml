@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEDF0B36-0423-4D44-6136-7E3CF78B0482" name="nf_company_location">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 07:35:58 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="company_location_pk" id="728D1305-43C3-FC87-2AF9-BDDEEB4C34EB">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 07:36:34 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_fk" id="AB91E5BD-C667-37D7-D3F7-549B972A3F09">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 07:36:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A683471E-85FF-B118-A40E-74FDC71DEDF9" referredColumn="BCBB935C-5C58-FBF5-15AE-736734518CDC"/>
+</associations>
+</Column>
+<Column name="location_fk" id="C17F2F2D-54E9-FCB0-859D-7FC6CD667C88">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 07:36:58 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA888A30-C965-A1C2-8CCB-C0BFE5F5876C" referredColumn="E293B5F8-3C3F-AB8D-8032-A50F31F3CDF6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46D0EFCF-C1BE-E69D-3ADE-35EA0ADE1994" name="nf_company_location_PK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 07:36:34 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="728D1305-43C3-FC87-2AF9-BDDEEB4C34EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A11DB568-EBF6-2B4A-B6FB-DE2254BC6A42" name="location_company_FK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 07:36:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB91E5BD-C667-37D7-D3F7-549B972A3F09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFCD3D02-9989-B3CE-6089-47373013959B" name="company_location_FK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 07:36:58 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C17F2F2D-54E9-FCB0-859D-7FC6CD667C88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

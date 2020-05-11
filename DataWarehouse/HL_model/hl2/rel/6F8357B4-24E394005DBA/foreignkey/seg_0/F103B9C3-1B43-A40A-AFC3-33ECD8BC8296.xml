@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F103B9C3-1B43-A40A-AFC3-33ECD8BC8296" containerWithKeyObject="2E405B2F-3436-EB3B-6E5D-989E6FA3CB46" localFKIndex="CA245D38-73CF-70C7-5211-2D4788B59364" name="HL2_ORDER_PRIORITY_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:50:43 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<referredTableLongName>HL2_ORDER_PRIORITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A1E7259-D506-E0EE-35F5-61B55129E8D5</referredTableID>
+<keyObject>CB399302-5794-1948-622A-D9732A914951</keyObject>
+<referredKeyID>CB399302-5794-1948-622A-D9732A914951</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ORDER_PRIORITY_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

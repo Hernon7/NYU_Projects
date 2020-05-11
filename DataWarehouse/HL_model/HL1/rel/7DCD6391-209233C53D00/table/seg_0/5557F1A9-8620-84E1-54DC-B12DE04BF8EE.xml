@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5557F1A9-8620-84E1-54DC-B12DE04BF8EE" name="HL1_productcate">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:14:00 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="productcate_id" id="72389A40-6939-1DE4-90BD-073D88CDEE19">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:14:28 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productcate" id="6FB35425-B52B-DABA-347F-7223E4CD6D24">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:23:06 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED5DD0EE-7C67-DD0B-B1A0-38305B77E502" name="ss_productcare_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:14:28 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72389A40-6939-1DE4-90BD-073D88CDEE19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

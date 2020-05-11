@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAC0DF09-B21B-A70B-C8D9-9A8ECF7CEB83" name="HL1_productsubcate">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:23:08 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="productsubcate_id" id="F7F10352-68C9-AB71-FE88-4F9057B71087">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:23:45 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productcate_id" id="BD69EBDA-A28B-CC1E-D7CB-B2D4B13CC20B">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:41:51 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C39D782E-C67B-4C49-82E8-B5EE364D7418" referredColumn="72389A40-6939-1DE4-90BD-073D88CDEE19"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48DF028F-93A0-80E1-CFD8-8D277CF27CD4" name="ss_productsubcate_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 00:23:45 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7F10352-68C9-AB71-FE88-4F9057B71087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB316E4A-E46E-A599-1354-E5032A48C4E1" name="ss_productsub_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:41:51 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD69EBDA-A28B-CC1E-D7CB-B2D4B13CC20B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

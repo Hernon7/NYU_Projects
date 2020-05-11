@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C3410788-4B3B-D429-1FEB-7B9271DBA328" containerWithKeyObject="2E405B2F-3436-EB3B-6E5D-989E6FA3CB46" localFKIndex="A7471963-5715-61F3-CE7D-1B1886E7CE57" name="HL2_PRODUCT_FK">
+<createdBy>apple</createdBy>
+<createdTime>2019-02-09 17:25:56 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<referredTableLongName>HL2_PRODUCT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>180E5773-3C47-4F95-ED51-B84C23E6DEBA</referredTableID>
+<keyObject>0F6B062E-25BF-DAA8-9080-F6C15C3910F3</keyObject>
+<referredKeyID>0F6B062E-25BF-DAA8-9080-F6C15C3910F3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PRODUCT_PK</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

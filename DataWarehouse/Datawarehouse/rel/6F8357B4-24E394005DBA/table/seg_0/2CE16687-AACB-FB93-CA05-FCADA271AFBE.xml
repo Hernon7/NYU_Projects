@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CE16687-AACB-FB93-CA05-FCADA271AFBE" name="HL2_SEGMENT">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 05:12:44 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SEGMENT_PK" id="B89519F4-D4A9-2CC0-DBB1-7D2DC6E317E9">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 05:27:42 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGMENT_NAME" id="3C7A0BE4-BE08-58AC-8936-5B75DE7011D7">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 05:27:42 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDD8DE45-F80E-BAF1-A122-2BCE943BF87F" name="HL2_SEGMENT_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 05:27:45 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B89519F4-D4A9-2CC0-DBB1-7D2DC6E317E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

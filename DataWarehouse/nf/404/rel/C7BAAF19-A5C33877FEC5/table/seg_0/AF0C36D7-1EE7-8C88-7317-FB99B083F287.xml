@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF0C36D7-1EE7-8C88-7317-FB99B083F287" name="nf_product_review">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:43:47 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_review_pk" id="3F0C7CB0-2F2E-C78D-8758-DA18E8DC81A4">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:47:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_fk" id="164595A9-621B-1D0A-5AC7-A98A77184490">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:47:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B43812A-BA48-1E0E-9DD0-B51336BF263E" referredColumn="860F3E3C-5C4B-FE43-17D7-8E1DE72FCC79"/>
+</associations>
+</Column>
+<Column name="user_fk" id="EECF5BB4-2F23-BDBE-3FAB-33BC58E30EDE">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:47:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB1CD305-580C-D3C1-0C91-DABFB4731564" referredColumn="950ABF6F-B4BE-FAD4-2907-D07C4C1ABF10"/>
+</associations>
+</Column>
+<Column name="helpfulness_numerator" id="138BEB98-2D34-F834-1B59-679745C72770">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:47:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="helpfulness_denominator" id="842269F2-54FE-7062-4BD3-60CE2DE7CA90">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:47:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="score" id="3E13883B-5C42-9634-1F3F-008ACE06355D">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-16 19:22:34 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="360645D5-30D2-630E-2685-E51D08025314" name="product_review_PK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:47:38 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F0C7CB0-2F2E-C78D-8758-DA18E8DC81A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2021563B-00AD-624E-AFC2-B0F3CC6434D2" name="product_review_and_product">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 23:04:24 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="164595A9-621B-1D0A-5AC7-A98A77184490"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38D1ADE9-99BD-2AC0-E6E5-C348D930CFB5" name="product_review_and_user">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 23:05:44 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EECF5BB4-2F23-BDBE-3FAB-33BC58E30EDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

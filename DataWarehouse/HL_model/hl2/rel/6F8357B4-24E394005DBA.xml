@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="HenanLi2.0" id="6F8357B4-7826-DECC-838B-24E394005DBA" mainViewID="DA854BD0-ED2F-5D27-D090-9AF92C369C90">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 02:18:54 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

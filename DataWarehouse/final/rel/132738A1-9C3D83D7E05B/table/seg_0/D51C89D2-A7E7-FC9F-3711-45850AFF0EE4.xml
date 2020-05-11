@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D51C89D2-A7E7-FC9F-3711-45850AFF0EE4" name="HLfin_customer">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:11:45 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_pk" id="BE50D648-09FB-3EB3-7C54-CECDB48D40AD">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:15:01 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_name" id="7AD5B31F-5F57-36AC-6049-B443786CC65C">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:15:19 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="D47C031B-4101-ED16-6E35-4F7C711323B0">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:15:48 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="550FB2CE-52A9-2F7C-0D1B-D92ABAD42C62" name="HLfin_customer_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:15:01 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE50D648-09FB-3EB3-7C54-CECDB48D40AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

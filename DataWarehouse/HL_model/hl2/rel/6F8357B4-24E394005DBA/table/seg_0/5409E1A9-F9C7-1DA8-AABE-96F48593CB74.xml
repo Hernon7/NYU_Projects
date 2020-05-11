@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5409E1A9-F9C7-1DA8-AABE-96F48593CB74" name="HL2_REGION">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:15:37 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REGION_PK" id="50E22BD8-6AAE-9195-1DB8-3DFBC1057F3F">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:32:50 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_NAME" id="FA499DF8-37B6-FB4C-C081-DCEBBF90DB71">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:32:50 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_FK" id="1227CDFC-3AE1-7702-D2F8-E00235B280B6">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:32:50 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10EF4B81-DBA0-00AF-1F1A-D4EDBE0053CA" referredColumn="1813EA52-4D78-2991-1A03-908AE8E554BC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A197B93F-3E5A-AE47-E060-BF6BA6833F78" name="HL2_REGION_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:32:50 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50E22BD8-6AAE-9195-1DB8-3DFBC1057F3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9677677D-DF3B-BBAD-0022-AAEFFDC9ECDF" name="HL2_REGION_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:33:31 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1227CDFC-3AE1-7702-D2F8-E00235B280B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

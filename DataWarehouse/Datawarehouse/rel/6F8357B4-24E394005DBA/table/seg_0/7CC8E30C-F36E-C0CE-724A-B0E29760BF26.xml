@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CC8E30C-F36E-C0CE-724A-B0E29760BF26" name="HL2_CUSTOEMR_SEGMENT">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 05:44:10 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUSTOMER_SEGEMENT_PK" id="6DABA7DB-B1AE-8802-8C6E-FBE7B676B53A">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:03:47 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_FK" id="33C4D4ED-1C7F-871F-0C89-0D8E128AF3EE">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:03:47 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1B778C8-77F3-96AE-67F3-C998AD0785B8" referredColumn="DC2F9FA6-C03B-E4B1-D14C-1A23AA9D878C"/>
+</associations>
+</Column>
+<Column name="SEGMENT_FK" id="1C91A277-2B83-2621-029B-58030849A317">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:03:47 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C18B6A4F-7905-304A-1CD2-96CD09648640" referredColumn="B89519F4-D4A9-2CC0-DBB1-7D2DC6E317E9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FFE4186E-CBE0-DCC7-0174-7EBB69018881" name="HL2_CUSTOEMR_SEGMENT_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:03:47 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DABA7DB-B1AE-8802-8C6E-FBE7B676B53A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="390266A9-86B7-CA76-55AD-16195BA3B0F1" name="HL2_CUSTOMER_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:04:37 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33C4D4ED-1C7F-871F-0C89-0D8E128AF3EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03782515-3954-6B70-45ED-C29C9961AA9E" name="HL2_CUSTOEMR_SEGMENT_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:04:47 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C91A277-2B83-2621-029B-58030849A317"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

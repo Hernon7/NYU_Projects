@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="886EFF8F-4CDF-CA66-2927-36FAC8865089" name="HL2_COUNTRY">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:13:17 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_PK" id="1813EA52-4D78-2991-1A03-908AE8E554BC">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:13:40 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="49A8B3AC-6D05-D4B1-FDDE-254BF30A6CD2">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:15:28 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="225D97F4-DDEE-FA98-1C86-1D4B969C839F" name="HL2_COUNTRY_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 06:15:28 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1813EA52-4D78-2991-1A03-908AE8E554BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4A15C871-4F1E-256D-67DE-1522634EE948" containerWithKeyObject="38643958-82B9-F625-814C-2DEBE256F249" localFKIndex="88D42592-105E-7228-4300-445946E476C1" name="score_list_and_employee_review">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-13 22:03:53 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<referredTableLongName>nf_employee_review</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>715D4DF4-B222-4454-483B-D9A13B4BD90D</referredTableID>
+<keyObject>0F692372-3D73-8644-DADB-62590941E9C8</keyObject>
+<referredKeyID>0F692372-3D73-8644-DADB-62590941E9C8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>review_pk</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

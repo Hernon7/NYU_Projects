@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24C12DA8-173F-74F9-9E8E-5B69619769C2" name="nf_working_condition">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:36:31 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="condition_pk" id="EBCEA25F-51AD-7F91-3DDD-DC750851A8FB">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:37:14 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="condition_state" id="1D4B2737-861D-A15E-0009-26BC8436EC67">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:37:14 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="411C4D1F-5920-468A-6B9E-8706F3CEAAAA" name="nf_working_condition_PK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:37:14 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBCEA25F-51AD-7F91-3DDD-DC750851A8FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

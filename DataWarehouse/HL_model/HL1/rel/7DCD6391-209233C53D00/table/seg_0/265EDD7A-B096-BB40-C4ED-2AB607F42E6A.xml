@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="265EDD7A-B096-BB40-C4ED-2AB607F42E6A" name="HL1_order">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:45:43 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_id" id="932B5F4B-9D4E-99CD-A32F-E9D75973B63E">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:49:23 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_date" id="95051FAD-BD95-FFEA-3960-1C8D3A6AB8B1">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:50:52 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_date" id="767411F8-D50D-0C44-D3A7-202231620CF3">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:50:52 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipmode_id" id="F9005866-7B0C-89E9-7595-98DB304B054A">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:21:02 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7B6DD81-3350-7752-F4A3-A5051FE662CF" referredColumn="14ECA6B1-D87F-EE88-4B50-785B26A7E1A4"/>
+</associations>
+</Column>
+<Column name="status_id" id="1E0CE53E-9461-A3EF-AE0F-2E8F1FC0D108">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:27:47 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer__id" id="32CCA3A1-941F-E54D-B262-DD3BE43AC614">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:35:23 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21E0AD74-D45E-80F7-22EB-1433ECEC0541" referredColumn="9584F76C-A5D5-7FB1-9EF4-20914503B9FB"/>
+</associations>
+</Column>
+<Column name="status" id="835A7B07-E9B2-F9E0-D6EB-AC78571C464B">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:36:22 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_priority_id" id="FCD925C0-FC3D-717D-5FA1-4095A18E9198">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:56:52 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31BEDE4B-618A-E9D3-6A2C-628F27B7DD39" referredColumn="1C1AB74D-7EA2-1898-0821-1C21B7DDCA20"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A3E1D6E-4B32-A05E-04AF-202D43FDF822" name="ss_order_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 23:49:23 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="932B5F4B-9D4E-99CD-A32F-E9D75973B63E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1590AE8-5CCC-19BE-2994-0BD28CDFE631" name="ss_ordershipmode_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:21:02 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9005866-7B0C-89E9-7595-98DB304B054A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A08FD7AC-495E-BDF9-7395-FAD7B8D75057" name="1HL_ordercustomer_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:35:23 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32CCA3A1-941F-E54D-B262-DD3BE43AC614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09104463-1225-9CF4-90EC-03D892EF689C" name="1HL_order_priority_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 19:56:52 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCD925C0-FC3D-717D-5FA1-4095A18E9198"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

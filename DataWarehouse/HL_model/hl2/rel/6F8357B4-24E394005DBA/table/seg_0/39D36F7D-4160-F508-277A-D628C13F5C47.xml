@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39D36F7D-4160-F508-277A-D628C13F5C47" name="HL2_CUSTOMER">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 02:35:04 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUSTOMER_PK" id="DC2F9FA6-C03B-E4B1-D14C-1A23AA9D878C">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 02:35:53 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_NAME" id="F1DB33B4-A485-8942-0FF2-3699CF8AC904">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 05:11:27 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78F4736F-D376-FCD7-3A8F-53F98F9A9DA4" name="HL1_CUSTOMER_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 02:35:53 UTC</createdTime>
+<ownerDesignName>hl2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC2F9FA6-C03B-E4B1-D14C-1A23AA9D878C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5DD6D3CC-98C6-03DE-0CF3-B7B3C90218A9" name="HLfin_data">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:32:12 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="data_pk" id="7CBCE884-5DB6-0D8D-21ED-C824DF2CA31B">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:33:36 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="045E6536-3E57-2A38-B3CD-6A3DC5C3F2EF">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:33:36 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_price" id="8698DC57-D2B7-4512-1AF0-AE6AC7617D01">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:33:36 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sales" id="085FCF2A-8AEE-1975-5B0C-2E94C255C8C4">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:33:36 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profit" id="BB55C5A5-4588-837F-110C-77B4A75D2ED4">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:33:36 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_fk" id="FF7F0C5E-1402-1DF0-1781-AED68E3E8323">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:33:43 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96C4C985-3FF9-1E18-D267-ED372D7480BE" referredColumn="BE50D648-09FB-3EB3-7C54-CECDB48D40AD"/>
+</associations>
+</Column>
+<Column name="product_fk" id="624B8210-26E6-755C-C612-5242C26D1F0A">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:34:22 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23499CD4-D24C-D7B9-27D8-D368221A364D" referredColumn="F480B41D-EDAB-D89F-5003-AFF2C4BB920E"/>
+</associations>
+</Column>
+<Column name="invoice_fk" id="2B5E8384-AAE9-5300-DC74-FE7035D485E1">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:34:49 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6090C63-2AA2-0486-2531-F40A397A4B1C" referredColumn="AF464349-E24B-F826-BB6F-3002F1A18CC5"/>
+</associations>
+</Column>
+<Column name="address_fk" id="9FBA70DA-2AD5-23D9-2F88-61DAF5639355">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:35:08 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84741DB5-62D4-8992-E316-4CD0D8C1CB50" referredColumn="A0C91644-8643-6572-3230-1668BB47F91F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A35B4E4C-28D1-7387-AB41-DF50F3115803" name="HLfin_data_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:34:43 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CBCE884-5DB6-0D8D-21ED-C824DF2CA31B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EE7F4AD-3039-0FA8-016D-1B3661153CB7" name="customer_fk">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:33:42 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF7F0C5E-1402-1DF0-1781-AED68E3E8323"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D14B68B5-C8EF-EBAE-E2FE-3058F4722EAC" name="product_fk">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:34:22 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="624B8210-26E6-755C-C612-5242C26D1F0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="116E2970-BBFE-A3FA-E674-A2A01456EA7A" name="invoice_fk">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:34:49 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B5E8384-AAE9-5300-DC74-FE7035D485E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6EF5BF7-F934-01A4-C2CB-DE4172F22448" name="address_fk">
+<createdBy>60223</createdBy>
+<createdTime>2019-03-03 00:35:08 UTC</createdTime>
+<ownerDesignName>final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FBA70DA-2AD5-23D9-2F88-61DAF5639355"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

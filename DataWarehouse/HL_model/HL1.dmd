@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="HL1" id="B3AB2AAC-91C8-3CD3-0FF3-A080A868ECB6" version="3.5">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-01 21:29:29 UTC</createdTime>
+<ownerDesignName>superstore</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B3AB2AAC-91C8-3CD3-0FF3-A080A868ECB6</designId>
+</OSDM_Design>

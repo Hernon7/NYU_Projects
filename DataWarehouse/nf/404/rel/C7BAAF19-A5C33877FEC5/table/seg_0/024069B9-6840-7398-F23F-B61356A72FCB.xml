@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="024069B9-6840-7398-F23F-B61356A72FCB" name="nf_company_employee">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:03:22 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_id" id="874405C9-DD10-EB78-D58C-04EBBD7F438B">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:04:58 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_fk" id="5FBC834B-0957-FFE1-63A0-1506E9032750">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:58:03 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D08002D6-6E51-9D1B-3351-48ABF729EA10" referredColumn="BCBB935C-5C58-FBF5-15AE-736734518CDC"/>
+</associations>
+</Column>
+<Column name="job_fk" id="088A271D-892E-A198-F93E-F8630C615BED">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:04:39 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C38B884-C144-3CF8-2857-E5542BB4153C" referredColumn="A23B54AB-FD13-36AC-E35B-39B4D9839AE0"/>
+</associations>
+</Column>
+<Column name="working_condition_fk" id="8B3E6BA2-6326-9B28-E0F7-E5393E678488">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:37:18 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BEA19A32-0782-ABDB-1A38-35D943B7D813" referredColumn="EBCEA25F-51AD-7F91-3DDD-DC750851A8FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="089B8E05-955B-B3A5-B65C-EB37572289AC" name="company_employee_PK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:04:58 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="874405C9-DD10-EB78-D58C-04EBBD7F438B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF55B506-8FDB-39D7-3A4D-3F96640E27A2" name="employee_and_company">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-10 22:58:03 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FBC834B-0957-FFE1-63A0-1506E9032750"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA0CC031-BE8C-2005-3731-76B662ADBEAA" name="employee_job_FK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:04:39 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="088A271D-892E-A198-F93E-F8630C615BED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="623C479F-DEE4-C113-AC49-15153BF0DC3A" name="employee_working_condition_FK">
+<createdBy>yiyi</createdBy>
+<createdTime>2019-02-22 05:37:18 UTC</createdTime>
+<ownerDesignName>404</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B3E6BA2-6326-9B28-E0F7-E5393E678488"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

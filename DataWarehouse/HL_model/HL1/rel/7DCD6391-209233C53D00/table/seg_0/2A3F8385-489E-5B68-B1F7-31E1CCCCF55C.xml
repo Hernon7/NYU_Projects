@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A3F8385-489E-5B68-B1F7-31E1CCCCF55C" name="HL1_address">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-01 21:33:58 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="address_id" id="D6F069FC-C96F-5C9B-BFFA-77F3C39F5E66">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-01 21:35:32 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="166F6778-668E-D830-3257-330EB0B3CB73">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 02:58:04 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="postal_code" id="A423371D-E275-1130-8A9F-106D9B205AEB">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 02:59:27 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="states_id" id="66BD26A1-5182-590D-4079-31DAD75D06CC">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 02:59:27 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8520E91-843C-D2D3-2E04-203AB68A9556" referredColumn="0F02C179-B0B2-D686-4660-C86B5EF9142D"/>
+</associations>
+</Column>
+<Column name="customer_id" id="9DDB0B9B-5E8F-C678-8B93-DF3E5D81E4FD">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 20:00:53 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AE6B156-BDAB-52B0-FD13-4462F40AFF1A" referredColumn="9584F76C-A5D5-7FB1-9EF4-20914503B9FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10879A0E-9FFB-67AD-016E-C401D00EF9CD" name="ss_address_PK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-01 21:35:32 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6F069FC-C96F-5C9B-BFFA-77F3C39F5E66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF9AD840-074C-920C-1291-CFB47669F1CE" name="ss_address_ss_states_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-02 04:17:47 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66BD26A1-5182-590D-4079-31DAD75D06CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28C24CC7-135E-87DA-AB79-99D0D7D04C4F" name="1HL_address_customer_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-03 20:00:53 UTC</createdTime>
+<ownerDesignName>HL1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DDB0B9B-5E8F-C678-8B93-DF3E5D81E4FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8D1C0250-CD7F-1B40-352F-8FAF057F2115" containerWithKeyObject="24F68931-5299-5749-05A1-230FA9D2B49D" localFKIndex="587A4431-542A-D2ED-33F8-2CA96A899AAA" name="HL2_STATE_FK">
+<createdBy>60223</createdBy>
+<createdTime>2019-02-07 20:16:33 UTC</createdTime>
+<ownerDesignName>Datawarehouse</ownerDesignName>
+<referredTableLongName>HL2_STATE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AEA9E5A1-51BA-F9C9-780B-A38ACAA5CAAF</referredTableID>
+<keyObject>F6EF00BF-B643-8468-2DD3-24E0F0FE8F54</keyObject>
+<referredKeyID>F6EF00BF-B643-8468-2DD3-24E0F0FE8F54</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STATE_PK</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
